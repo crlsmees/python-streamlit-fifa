@@ -4,16 +4,16 @@ O repositório "python-streamlit-fifa" contém um conjunto de códigos que forma
 
 ### Funcionalidades Principais:
 
-  1.Página Principal:
+  **1.Página Principal:**
   
   A página inicial apresenta uma visão geral do dataset FIFA23 Official Dataset Clean. Os dados são carregados e filtrados para exibir apenas jogadores cujo contrato é válido até o ano atual e que possuem um valor de mercado positivo.
   Os visitantes podem acessar o dataset original no Kaggle através de um botão de link direto.
 
-  2.Exploração por Clube e Jogador:
+  **2.Exploração por Clube e Jogador:**
   
   A segunda página permite aos usuários selecionar um clube específico e, em seguida, escolher um jogador desse clube. As estatísticas detalhadas do jogador são exibidas, incluindo foto, clube atual, altura, peso, overall (nota geral), valor de mercado, salário semanal e cláusula de rescisão.
 
-  3.Visualização Detalhada por Clube:
+  **3.Visualização Detalhada por Clube:**
   
   A terceira página oferece uma visão mais detalhada dos jogadores do clube selecionado anteriormente. Ele exibe uma imagem do logo do clube, seguida por uma tabela detalhada com informações como idade, foto do jogador, bandeira do país, overall, valor de mercado, salário semanal, data de ingresso no clube, altura, peso, validade do contrato e cláusula de rescisão.
 
