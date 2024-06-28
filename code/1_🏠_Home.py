@@ -3,16 +3,22 @@ import webbrowser
 import pandas as pd
 from datetime import datetime
 
+@st.cache(allow_output_mutation=True)
+def load_data():
+    df_data = pd.read_csv('datasets/CLEAN_FIFA23_official_data.csv', index_col=0)
+    df_data = df_data[df_data['Contract Valid Until'] >= datetime.today().year]
+    df_data = df_data[df_data['Value(£)'] > 0]
+    df_data = df_data.sort_values(by='Overall', ascending=False)
+    return df_data
+
 st.set_page_config(
     layout="centered"
 )
 
 if 'data' not in st.session_state:
-    df_data = pd.read_csv('datasets/CLEAN_FIFA23_official_data.csv', index_col=0)
-    df_data = df_data[df_data['Contract Valid Until'] >= datetime.today().year]
-    df_data = df_data[df_data['Value(£)'] > 0]
-    df_data = df_data.sort_values(by='Overall', ascending=False)
-    st.session_state['data'] = df_data
+    st.session_state['data'] = load_data()
+
+df_data = st.session_state['data']
 
 st.markdown('# FIFA23 OFFICIAL DATASET! ⚽️')
 st.sidebar.markdown('Developed by Carlos Mees')
