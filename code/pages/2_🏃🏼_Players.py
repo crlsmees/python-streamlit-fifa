@@ -5,6 +5,9 @@ st.set_page_config(
     layout="wide"
 )
 
+if 'data' not in st.session_state:
+    st.session_state['data'] = pd.read_csv('datasets/CLEAN_FIFA23_official_data.csv', index_col=0)
+
 df_data = st.session_state['data']
 
 def custom_sort(club):
