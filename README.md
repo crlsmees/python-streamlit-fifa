@@ -2,7 +2,7 @@
 
 O repositório "python-streamlit-fifa" contém um conjunto de códigos que formam uma aplicação web interativa desenvolvida utilizando Streamlit. Esta aplicação é focada na visualização e exploração de dados detalhados de jogadores de futebol do FIFA23, com base em um dataset específico.
 
-##Funcionalidades Principais:
+###Funcionalidades Principais:
 
 1.Página Principal:
 
@@ -17,10 +17,10 @@ A segunda página permite aos usuários selecionar um clube específico e, em se
 
 A terceira página oferece uma visão mais detalhada dos jogadores do clube selecionado anteriormente. Ele exibe uma imagem do logo do clube, seguida por uma tabela detalhada com informações como idade, foto do jogador, bandeira do país, overall, valor de mercado, salário semanal, data de ingresso no clube, altura, peso, validade do contrato e cláusula de rescisão.
 
-##Objetivo:
+###Objetivo:
 
 O objetivo do repositório é proporcionar aos entusiastas do futebol uma plataforma interativa para explorar e analisar dados abrangentes de jogadores de futebol do FIFA23. Com mais de 17.000 registros, o dataset oferece uma fonte valiosa para análise de atributos dos jogadores, estatísticas de desempenho, avaliação de mercado, análise de clubes e desenvolvimento de jogadores ao longo do tempo.
 
-##Acesso ao Site:
+###Acesso ao Site:
 
 O site gerado pelo repositório pode ser acessado através do seguinte link: FIFA23 Dataset Explorer
